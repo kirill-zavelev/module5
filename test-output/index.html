@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Parallel_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Parallel Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Parallel_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Parallel_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Parallel_Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Parallel_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Parallel_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Parallel_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Parallel_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 4 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parallel_Suite" class="hide-methods failed suite-Parallel_Suite"> (hide)</a> <!-- hide-methods failed suite-Parallel_Suite -->
+                      <a href="#" panel-name="suite-Parallel_Suite" class="show-methods failed suite-Parallel_Suite"> (show)</a> <!-- show-methods failed suite-Parallel_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Parallel_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.CosOfDoubleValueCalcTest" class="method navigator-link" hash-for-method="cosOfDoubleValue(360.0, -0.283691091486527)">cosOfDoubleValue(360.0, -0.283691091486527)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.CtgOfDoubleValueCalcTest" class="method navigator-link" hash-for-method="ctgOfDoubleValue(3.5, 1.00182542851)">ctgOfDoubleValue(3.5, 1.00182542851)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.DivOfLongValuesCalcTest" class="method navigator-link" hash-for-method="divOfTwoLongValues">divOfTwoLongValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.TgOfDoubleValueCalcTest" class="method navigator-link" hash-for-method="tgOfDoubleValue(360.0, -3.3801404139609623)">tgOfDoubleValue(360.0, -3.3801404139609623)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parallel_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Parallel_Suite" class="hide-methods passed suite-Parallel_Suite"> (hide)</a> <!-- hide-methods passed suite-Parallel_Suite -->
+                      <a href="#" panel-name="suite-Parallel_Suite" class="show-methods passed suite-Parallel_Suite"> (show)</a> <!-- show-methods passed suite-Parallel_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Parallel_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.DivOfDoubleValuesCalcTest" class="method navigator-link" hash-for-method="divOfTwoDoubleValues(1.5, 3.0, 0.5)">divOfTwoDoubleValues(1.5, 3.0, 0.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.IsNegativeCalcTest" class="method navigator-link" hash-for-method="isNegativeOfLongValue(1, false)">isNegativeOfLongValue(1, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.IsNegativeCalcTest" class="method navigator-link" hash-for-method="isNegativeOfLongValue(-2, true)">isNegativeOfLongValue(-2, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.IsNegativeCalcTest" class="method navigator-link" hash-for-method="isNegativeOfLongValue(0, false)">isNegativeOfLongValue(0, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.IsPositiveCalcTest" class="method navigator-link" hash-for-method="isPositiveOfLongValue(0, false)">isPositiveOfLongValue(0, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.IsPositiveCalcTest" class="method navigator-link" hash-for-method="isPositiveOfLongValue(-1, false)">isPositiveOfLongValue(-1, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.IsPositiveCalcTest" class="method navigator-link" hash-for-method="isPositiveOfLongValue(1, true)">isPositiveOfLongValue(1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.MultOfDoubleValuesCalcTest" class="method navigator-link" hash-for-method="multOfTwoDoubleValues(5.846, 6.5, 37.0)">multOfTwoDoubleValues(5.846, 6.5, 37.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.MultOfLongValuesCalcTest" class="method navigator-link" hash-for-method="multOfTwoLongValues(10, 15, 150)">multOfTwoLongValues(10, 15, 150)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.PowOfDoubleValuesCalcTest" class="method navigator-link" hash-for-method="powOfTwoDoubleValues(-1.5, 3.1, -3.375)">powOfTwoDoubleValues(-1.5, 3.1, -3.375)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.PowOfDoubleValuesCalcTest" class="method navigator-link" hash-for-method="powOfTwoDoubleValues(1.5, 3.1, 3.375)">powOfTwoDoubleValues(1.5, 3.1, 3.375)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.SinOfDoubleValueCalcTest" class="method navigator-link" hash-for-method="sinOfDoubleValue(360.0, 0.9589157234143065)">sinOfDoubleValue(360.0, 0.9589157234143065)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.SqrtOfDoubleValueCalcTest" class="method navigator-link" hash-for-method="sqrtOfDoubleValue(16.4, 4.049691346263317)">sqrtOfDoubleValue(16.4, 4.049691346263317)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.SubOfDoubleValuesCalcTest" class="method navigator-link" hash-for-method="subOfTwoDoubleValues(10.0458, 15.72993, -5.68413)">subOfTwoDoubleValues(10.0458, 15.72993, -5.68413)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.SubOfLongValuesCalcTest" class="method navigator-link" hash-for-method="subOfTwoLongValues(10, 15, -5)">subOfTwoLongValues(10, 15, -5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.SumOfDoubleValuesCalcTest" class="method navigator-link" hash-for-method="sumOfTwoDoubleValues(5.5, 6.5, 12.0)">sumOfTwoDoubleValues(5.5, 6.5, 12.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="com.epam.testng.tests.SumOfLongValuesCalcTest" class="method navigator-link" hash-for-method="sumOfTwoLongValues(10, 15, 25)">sumOfTwoLongValues(10, 15, 25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Parallel_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Parallel_Suite" class="panel Parallel_Suite">
+          <div class="suite-Parallel_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.epam.testng.tests.TgOfDoubleValueCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tgOfDoubleValue(360.0, -3.3801404139609623)">
+                  </a> <!-- tgOfDoubleValue(360.0, -3.3801404139609623) -->
+                  <span class="method-name">tgOfDoubleValue</span>
+                  <span class="parameters">(360.0, -3.3801404139609623)</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [-3.3801404139609623] but found [1.0]
+	at com.epam.testng.tests.TgOfDoubleValueCalcTest.tgOfDoubleValue(TgOfDoubleValueCalcTest.java:11)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-failed -->
+          <div class="suite-Parallel_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.epam.testng.tests.DivOfLongValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divOfTwoLongValues">
+                  </a> <!-- divOfTwoLongValues -->
+                  <span class="method-name">divOfTwoLongValues</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void com.epam.testng.tests.DivOfLongValuesCalcTest.divOfTwoLongValues(long,long,long)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: divOfTwoLongValues([Parameter{index=0, type=long, declaredAnnotations=[]}, Parameter{index=1, type=long, declaredAnnotations=[]}, Parameter{index=2, type=long, declaredAnnotations=[]}])
+Arguments: [(java.lang.Long) 4,(java.lang.Integer) 0]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-failed -->
+          <div class="suite-Parallel_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.epam.testng.tests.CtgOfDoubleValueCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ctgOfDoubleValue(3.5, 1.00182542851)">
+                  </a> <!-- ctgOfDoubleValue(3.5, 1.00182542851) -->
+                  <span class="method-name">ctgOfDoubleValue</span>
+                  <span class="parameters">(3.5, 1.00182542851)</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [1.00182542851] but found [0.9981778976111987]
+	at com.epam.testng.tests.CtgOfDoubleValueCalcTest.ctgOfDoubleValue(CtgOfDoubleValueCalcTest.java:11)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-failed -->
+          <div class="suite-Parallel_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.epam.testng.tests.CosOfDoubleValueCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosOfDoubleValue(360.0, -0.283691091486527)">
+                  </a> <!-- cosOfDoubleValue(360.0, -0.283691091486527) -->
+                  <span class="method-name">cosOfDoubleValue</span>
+                  <span class="parameters">(360.0, -0.283691091486527)</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [-0.283691091486527] but found [0.9589157234143065]
+	at com.epam.testng.tests.CosOfDoubleValueCalcTest.cosOfDoubleValue(CosOfDoubleValueCalcTest.java:11)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-failed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.IsNegativeCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="isNegativeOfLongValue(1, false)">
+                  </a> <!-- isNegativeOfLongValue(1, false) -->
+                  <span class="method-name">isNegativeOfLongValue</span>
+                  <span class="parameters">(1, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isNegativeOfLongValue(-2, true)">
+                  </a> <!-- isNegativeOfLongValue(-2, true) -->
+                  <span class="method-name">isNegativeOfLongValue</span>
+                  <span class="parameters">(-2, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isNegativeOfLongValue(0, false)">
+                  </a> <!-- isNegativeOfLongValue(0, false) -->
+                  <span class="method-name">isNegativeOfLongValue</span>
+                  <span class="parameters">(0, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.IsPositiveCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="isPositiveOfLongValue(0, false)">
+                  </a> <!-- isPositiveOfLongValue(0, false) -->
+                  <span class="method-name">isPositiveOfLongValue</span>
+                  <span class="parameters">(0, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isPositiveOfLongValue(-1, false)">
+                  </a> <!-- isPositiveOfLongValue(-1, false) -->
+                  <span class="method-name">isPositiveOfLongValue</span>
+                  <span class="parameters">(-1, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isPositiveOfLongValue(1, true)">
+                  </a> <!-- isPositiveOfLongValue(1, true) -->
+                  <span class="method-name">isPositiveOfLongValue</span>
+                  <span class="parameters">(1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.SubOfLongValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="subOfTwoLongValues(10, 15, -5)">
+                  </a> <!-- subOfTwoLongValues(10, 15, -5) -->
+                  <span class="method-name">subOfTwoLongValues</span>
+                  <span class="parameters">(10, 15, -5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.SubOfDoubleValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="subOfTwoDoubleValues(10.0458, 15.72993, -5.68413)">
+                  </a> <!-- subOfTwoDoubleValues(10.0458, 15.72993, -5.68413) -->
+                  <span class="method-name">subOfTwoDoubleValues</span>
+                  <span class="parameters">(10.0458, 15.72993, -5.68413)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.MultOfLongValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multOfTwoLongValues(10, 15, 150)">
+                  </a> <!-- multOfTwoLongValues(10, 15, 150) -->
+                  <span class="method-name">multOfTwoLongValues</span>
+                  <span class="parameters">(10, 15, 150)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.SumOfLongValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sumOfTwoLongValues(10, 15, 25)">
+                  </a> <!-- sumOfTwoLongValues(10, 15, 25) -->
+                  <span class="method-name">sumOfTwoLongValues</span>
+                  <span class="parameters">(10, 15, 25)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.SqrtOfDoubleValueCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sqrtOfDoubleValue(16.4, 4.049691346263317)">
+                  </a> <!-- sqrtOfDoubleValue(16.4, 4.049691346263317) -->
+                  <span class="method-name">sqrtOfDoubleValue</span>
+                  <span class="parameters">(16.4, 4.049691346263317)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.SinOfDoubleValueCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sinOfDoubleValue(360.0, 0.9589157234143065)">
+                  </a> <!-- sinOfDoubleValue(360.0, 0.9589157234143065) -->
+                  <span class="method-name">sinOfDoubleValue</span>
+                  <span class="parameters">(360.0, 0.9589157234143065)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.PowOfDoubleValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="powOfTwoDoubleValues(-1.5, 3.1, -3.375)">
+                  </a> <!-- powOfTwoDoubleValues(-1.5, 3.1, -3.375) -->
+                  <span class="method-name">powOfTwoDoubleValues</span>
+                  <span class="parameters">(-1.5, 3.1, -3.375)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="powOfTwoDoubleValues(1.5, 3.1, 3.375)">
+                  </a> <!-- powOfTwoDoubleValues(1.5, 3.1, 3.375) -->
+                  <span class="method-name">powOfTwoDoubleValues</span>
+                  <span class="parameters">(1.5, 3.1, 3.375)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.DivOfDoubleValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divOfTwoDoubleValues(1.5, 3.0, 0.5)">
+                  </a> <!-- divOfTwoDoubleValues(1.5, 3.0, 0.5) -->
+                  <span class="method-name">divOfTwoDoubleValues</span>
+                  <span class="parameters">(1.5, 3.0, 0.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.MultOfDoubleValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multOfTwoDoubleValues(5.846, 6.5, 37.0)">
+                  </a> <!-- multOfTwoDoubleValues(5.846, 6.5, 37.0) -->
+                  <span class="method-name">multOfTwoDoubleValues</span>
+                  <span class="parameters">(5.846, 6.5, 37.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testng.tests.SumOfDoubleValuesCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sumOfTwoDoubleValues(5.5, 6.5, 12.0)">
+                  </a> <!-- sumOfTwoDoubleValues(5.5, 6.5, 12.0) -->
+                  <span class="method-name">sumOfTwoDoubleValues</span>
+                  <span class="parameters">(5.5, 6.5, 12.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+        </div> <!-- panel Parallel_Suite -->
+        <div panel-name="suite-NegativeSuite" class="panel NegativeSuite">
+        </div> <!-- panel NegativeSuite -->
+        <div panel-name="test-xml-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/kirill/Documents/module5/src/test/java/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Parallel Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.epam.testng.listners.TestNgListners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.epam.testng.tests.CosOfDoubleValueCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.CtgOfDoubleValueCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.DivOfDoubleValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.DivOfLongValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.IsPositiveCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.IsNegativeCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.MultOfDoubleValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.MultOfLongValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.PowOfDoubleValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.SinOfDoubleValueCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.SqrtOfDoubleValueCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.SubOfDoubleValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.SubOfLongValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.SumOfDoubleValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.SumOfLongValuesCalcTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testng.tests.TgOfDoubleValueCalcTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Parallel Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-NegativeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;NegativeSuite&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;/Users/kirill/Documents/module5/src/test/java/testng.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- NegativeSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (16 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-NegativeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for NegativeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">boolean</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">isNegativeOfLongValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">isPositiveOfLongValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">doubleValues</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">cosOfDoubleValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ctgOfDoubleValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">divOfTwoDoubleValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">multOfTwoDoubleValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">powOfTwoDoubleValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sinOfDoubleValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sqrtOfDoubleValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">subOfTwoDoubleValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sumOfTwoDoubleValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">tgOfDoubleValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">longValues</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">divOfTwoLongValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">multOfTwoLongValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">subOfTwoLongValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sumOfTwoLongValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-NegativeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for NegativeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Parallel_Suite');
+function tableData_Parallel_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ctgOfDoubleValue')
+data.setCell(0, 2, 'com.epam.testng.tests.CtgOfDoubleValueCalcTest')
+data.setCell(0, 3, 8);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'cosOfDoubleValue')
+data.setCell(1, 2, 'com.epam.testng.tests.CosOfDoubleValueCalcTest')
+data.setCell(1, 3, 8);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sqrtOfDoubleValue')
+data.setCell(2, 2, 'com.epam.testng.tests.SqrtOfDoubleValueCalcTest')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'divOfTwoLongValues')
+data.setCell(3, 2, 'com.epam.testng.tests.DivOfLongValuesCalcTest')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'subOfTwoLongValues')
+data.setCell(4, 2, 'com.epam.testng.tests.SubOfLongValuesCalcTest')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sinOfDoubleValue')
+data.setCell(5, 2, 'com.epam.testng.tests.SinOfDoubleValueCalcTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'isPositiveOfLongValue')
+data.setCell(6, 2, 'com.epam.testng.tests.IsPositiveCalcTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'isPositiveOfLongValue')
+data.setCell(7, 2, 'com.epam.testng.tests.IsPositiveCalcTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'multOfTwoDoubleValues')
+data.setCell(8, 2, 'com.epam.testng.tests.MultOfDoubleValuesCalcTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'isNegativeOfLongValue')
+data.setCell(9, 2, 'com.epam.testng.tests.IsNegativeCalcTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'isNegativeOfLongValue')
+data.setCell(10, 2, 'com.epam.testng.tests.IsNegativeCalcTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'divOfTwoDoubleValues')
+data.setCell(11, 2, 'com.epam.testng.tests.DivOfDoubleValuesCalcTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'isNegativeOfLongValue')
+data.setCell(12, 2, 'com.epam.testng.tests.IsNegativeCalcTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'powOfTwoDoubleValues')
+data.setCell(13, 2, 'com.epam.testng.tests.PowOfDoubleValuesCalcTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'multOfTwoLongValues')
+data.setCell(14, 2, 'com.epam.testng.tests.MultOfLongValuesCalcTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'powOfTwoDoubleValues')
+data.setCell(15, 2, 'com.epam.testng.tests.PowOfDoubleValuesCalcTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'sumOfTwoDoubleValues')
+data.setCell(16, 2, 'com.epam.testng.tests.SumOfDoubleValuesCalcTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'subOfTwoDoubleValues')
+data.setCell(17, 2, 'com.epam.testng.tests.SubOfDoubleValuesCalcTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'isPositiveOfLongValue')
+data.setCell(18, 2, 'com.epam.testng.tests.IsPositiveCalcTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'sumOfTwoLongValues')
+data.setCell(19, 2, 'com.epam.testng.tests.SumOfLongValuesCalcTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'tgOfDoubleValue')
+data.setCell(20, 2, 'com.epam.testng.tests.TgOfDoubleValueCalcTest')
+data.setCell(20, 3, 0);
+window.suiteTableData['Parallel_Suite']= { tableData: data, tableDiv: 'times-div-Parallel_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 22 ms</span>
+              <div id="times-div-Parallel_Suite">
+              </div> <!-- times-div-Parallel_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-NegativeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for NegativeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_NegativeSuite');
+function tableData_NegativeSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['NegativeSuite']= { tableData: data, tableDiv: 'times-div-NegativeSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-NegativeSuite">
+              </div> <!-- times-div-NegativeSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-NegativeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for NegativeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-NegativeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.CosOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.CtgOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.CosOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cosOfDoubleValue(360.0, -0.283691091486527)</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.CtgOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ctgOfDoubleValue(3.5, 1.00182542851)</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.CosOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.CtgOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.DivOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">87 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.DivOfLongValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">87 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.DivOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divOfTwoDoubleValues(1.5, 3.0, 0.5)</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">90 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.DivOfLongValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">90 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsNegativeCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsPositiveCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsNegativeCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isNegativeOfLongValue(-2, true)</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsPositiveCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isPositiveOfLongValue(0, false)</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsNegativeCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isNegativeOfLongValue(0, false)</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsPositiveCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isPositiveOfLongValue(1, true)</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsNegativeCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isNegativeOfLongValue(1, false)</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsPositiveCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">isPositiveOfLongValue(-1, false)</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsNegativeCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.IsPositiveCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">96 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.MultOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">96 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.MultOfLongValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">97 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">multOfTwoLongValues(10, 15, 150)</span>
+                <span class="method-start">99 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.PowOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.MultOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">multOfTwoDoubleValues(5.846, 6.5, 37.0)</span>
+                <span class="method-start">101 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.PowOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">powOfTwoDoubleValues(1.5, 3.1, 3.375)</span>
+                <span class="method-start">101 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.MultOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">102 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.PowOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">powOfTwoDoubleValues(-1.5, 3.1, -3.375)</span>
+                <span class="method-start">102 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SinOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">102 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.PowOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SqrtOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SinOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sinOfDoubleValue(360.0, 0.9589157234143065)</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">104 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SqrtOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sqrtOfDoubleValue(16.4, 4.049691346263317)</span>
+                <span class="method-start">104 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SubOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">105 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">subOfTwoDoubleValues(10.0458, 15.72993, -5.68413)</span>
+                <span class="method-start">106 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SqrtOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SubOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SubOfLongValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SumOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SubOfLongValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">subOfTwoLongValues(10, 15, -5)</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">109 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SumOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sumOfTwoDoubleValues(5.5, 6.5, 12.0)</span>
+                <span class="method-start">110 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SumOfLongValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">110 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SumOfDoubleValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">110 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.TgOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">111 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.SumOfLongValuesCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sumOfTwoLongValues(10, 15, 25)</span>
+                <span class="method-start">111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testng.tests.TgOfDoubleValueCalcTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tgOfDoubleValue(360.0, -3.3801404139609623)</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-NegativeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
