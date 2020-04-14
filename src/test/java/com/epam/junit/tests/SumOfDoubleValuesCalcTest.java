@@ -1,5 +1,6 @@
-package junit;
+package com.epam.junit.tests;
 
+import com.epam.junit.base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,22 +10,22 @@ import java.util.Arrays;
 import java.util.List;
 
 @RunWith(Parameterized.class)
-public class SumOfLongValuesCalcTest extends BaseTest {
+public class SumOfDoubleValuesCalcTest extends BaseTest {
 
-    public SumOfLongValuesCalcTest(double firstNumber, double secondNumber, double expectedResult) {
+    public SumOfDoubleValuesCalcTest(double firstNumber, double secondNumber, double expectedResult) {
         super(firstNumber, secondNumber, expectedResult);
     }
 
     @Parameterized.Parameters
-    public static List<Object[]> dataForSumOfLongValues() {
+    public static List<Object[]> dataForSumOfDoubleValues() {
         return Arrays.asList(new Object[][] {
-                {30L, 60L, 90L},
-                {-5L, -6L, -11L}
+                {3.5, 6.5, 10.0},
+                {-5.5, 2.5, -3.0}
         });
     }
 
     @Test
-    public void SumOfLongValues() {
+    public void SumOfDoubleValues() {
         double actualResult = calculator.sum(super.firstNumber, secondNumber);
         Assert.assertEquals(expectedResult, actualResult, DELTA);
     }

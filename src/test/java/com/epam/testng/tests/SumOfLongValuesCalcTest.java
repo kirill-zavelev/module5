@@ -1,9 +1,8 @@
 package com.epam.testng.tests;
 
-import com.epam.testng.BaseDataProvider;
-import com.epam.testng.BaseTest;
+import com.epam.testng.base.BaseDataProvider;
+import com.epam.testng.base.BaseTest;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class SumOfLongValuesCalcTest extends BaseTest {

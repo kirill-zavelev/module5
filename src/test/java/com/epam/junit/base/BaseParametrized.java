@@ -1,4 +1,4 @@
-package junit;
+package com.epam.junit.base;
 
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
