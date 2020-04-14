@@ -1,2 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/kirill/Documents/module5/src/test/java"><classes><class name="com.epam.testng.tests.CosOfDoubleValueCalcTest"><methods><include name="cosOfDoubleValue"/></methods></class><class name="com.epam.testng.tests.CtgOfDoubleValueCalcTest"><methods><include name="ctgOfDoubleValue"/></methods></class><class name="com.epam.testng.tests.DivOfDoubleValuesCalcTest"><methods><include name="divOfTwoDoubleValues"/></methods></class><class name="com.epam.testng.tests.DivOfLongValuesCalcTest"><methods><include name="divOfTwoLongValues"/></methods></class><class name="com.epam.testng.tests.IsNegativeCalcTest"><methods><include name="isNegativeOfLongValue"/></methods></class><class name="com.epam.testng.tests.IsPositiveCalcTest"><methods><include name="isPositiveOfLongValue"/></methods></class><class name="com.epam.testng.tests.MultOfDoubleValuesCalcTest"><methods><include name="multOfTwoDoubleValues"/></methods></class><class name="com.epam.testng.tests.MultOfLongValuesCalcTest"><methods><include name="multOfTwoLongValues"/></methods></class><class name="com.epam.testng.tests.PowOfDoubleValuesCalcTest"><methods><include name="powOfTwoDoubleValues"/></methods></class><class name="com.epam.testng.tests.SinOfDoubleValueCalcTest"><methods><include name="sinOfDoubleValue"/></methods></class><class name="com.epam.testng.tests.SqrtOfDoubleValueCalcTest"><methods><include name="sqrtOfDoubleValue"/></methods></class><class name="com.epam.testng.tests.SubOfDoubleValuesCalcTest"><methods><include name="subOfTwoDoubleValues"/></methods></class><class name="com.epam.testng.tests.SubOfLongValuesCalcTest"><methods><include name="subOfTwoLongValues"/></methods></class><class name="com.epam.testng.tests.SumOfDoubleValuesCalcTest"><methods><include name="sumOfTwoDoubleValues"/></methods></class><class name="com.epam.testng.tests.SumOfLongValuesCalcTest"><methods><include name="sumOfTwoLongValues"/></methods></class><class name="com.epam.testng.tests.TgOfDoubleValueCalcTest"><methods><include name="tgOfDoubleValue"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/kirill/Documents/module5/src/test/java">
+        <classes>
+            <class name="com.epam.testng.tests.CosOfDoubleValueCalcTest">
+                <methods>
+                    <include name="cosOfDoubleValue" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.CtgOfDoubleValueCalcTest">
+                <methods>
+                    <include name="ctgOfDoubleValue" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.DivOfDoubleValuesCalcTest">
+                <methods>
+                    <include name="divOfTwoDoubleValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.DivOfLongValuesCalcTest">
+                <methods>
+                    <include name="divOfTwoLongValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.IsNegativeCalcTest">
+                <methods>
+                    <include name="isNegativeOfLongValue" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.IsPositiveCalcTest">
+                <methods>
+                    <include name="isPositiveOfLongValue" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.MultOfDoubleValuesCalcTest">
+                <methods>
+                    <include name="multOfTwoDoubleValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.MultOfLongValuesCalcTest">
+                <methods>
+                    <include name="multOfTwoLongValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.PowOfDoubleValuesCalcTest">
+                <methods>
+                    <include name="powOfTwoDoubleValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.SinOfDoubleValueCalcTest">
+                <methods>
+                    <include name="sinOfDoubleValue" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.SqrtOfDoubleValueCalcTest">
+                <methods>
+                    <include name="sqrtOfDoubleValue" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.SubOfDoubleValuesCalcTest">
+                <methods>
+                    <include name="subOfTwoDoubleValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.SubOfLongValuesCalcTest">
+                <methods>
+                    <include name="subOfTwoLongValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.SumOfDoubleValuesCalcTest">
+                <methods>
+                    <include name="sumOfTwoDoubleValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.SumOfLongValuesCalcTest">
+                <methods>
+                    <include name="sumOfTwoLongValues" />
+                </methods>
+            </class>
+            <class name="com.epam.testng.tests.TgOfDoubleValueCalcTest">
+                <methods>
+                    <include name="tgOfDoubleValue" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
