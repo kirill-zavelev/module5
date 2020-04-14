@@ -8,7 +8,7 @@ import org.testng.Assert;
 public class SumOfDoubleValuesCalcTest extends BaseTest{
 
     @ParameterizedTest
-    @MethodSource("com.epam.junit.dataprovider.BaseDataProvider#doubleValuesForSum")
+    @MethodSource("com.epam.junit.base.BaseDataProvider#doubleValuesForSum")
     public void sumOfDoubleValues(Double a, Double b, Double expectedResult) {
         double actualResult = calculator.sum(a, b);
         Assert.assertEquals(expectedResult, actualResult, DELTA);

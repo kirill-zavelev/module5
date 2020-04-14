@@ -8,7 +8,7 @@ import org.testng.Assert;
 public class SumOfLongValuesCalcTest extends BaseTest {
 
     @ParameterizedTest
-    @MethodSource("com.epam.junit.dataprovider.BaseDataProvider#dataForSumOfLongValues")
+    @MethodSource("com.epam.junit.base.BaseDataProvider#dataForSumOfLongValues")
     public void sumOfLongValues(Long a, Long b, Long expectedResult) {
         Long actualResult = calculator.sum(a, b);
         Assert.assertEquals(expectedResult, actualResult, DELTA);
