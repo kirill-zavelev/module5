@@ -1,4 +1,4 @@
-package com.epam.junit.dataprovider;
+package com.epam.junit.base;
 
 import java.util.Arrays;
 import java.util.List;
