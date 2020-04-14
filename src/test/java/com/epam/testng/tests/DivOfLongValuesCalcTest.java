@@ -7,12 +7,15 @@ import org.testng.annotations.Test;
 
 public class DivOfLongValuesCalcTest extends BaseTest {
 
-    @Test(dataProvider = "DivOfTwoLongValues", dataProviderClass = BaseDataProvider.class,
-            expectedExceptions = NumberFormatException.class,
-            expectedExceptionsMessageRegExp = "Attempt to divide by zero", groups = {"longValues"})
-    public void divOfTwoLongValues(long a, long b, long expectedResult) {
-        long actualResult = calculator.div(a, b);
-        Assert.assertEquals(actualResult, expectedResult);
-        System.out.println(actualResult);
+    @Test(dataProvider = "DivOfTwoLongValues", dataProviderClass = BaseDataProvider.class, groups = {"longValues"})
+    public void divOfTwoLongValues(long a, long b) {
+        String expectedResult = "Attempt to divide by zero";
+
+        try {
+            calculator.div(a, b);
+        } catch (NumberFormatException nfe) {
+            String actual = nfe.getMessage();
+            Assert.assertEquals(actual, expectedResult);
+        }
     }
 }
