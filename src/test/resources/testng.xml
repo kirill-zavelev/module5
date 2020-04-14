@@ -1,13 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Parallel Suite" parallel="classes" verbose="4" >
+<suite name="Parallel Suite" parallel="methods" verbose="4" thread-count="2" >
 
     <listeners>
         <listener class-name="com.epam.testng.listners.TestNgListener"> </listener>
     </listeners>
+
     <packages>
         <package name="com.epam.testng.tests"></package>
     </packages>
+
     <test name="Test long values">
         <groups>
             <run>
@@ -29,6 +31,5 @@
             </run>
         </groups>
     </test>
-
 
 </suite>
