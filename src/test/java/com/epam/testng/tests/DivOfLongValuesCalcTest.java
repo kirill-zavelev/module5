@@ -14,8 +14,8 @@ public class DivOfLongValuesCalcTest extends BaseTest {
         try {
             calculator.div(a, b);
         } catch (NumberFormatException nfe) {
-            String actual = nfe.getMessage();
-            Assert.assertEquals(actual, expectedResult);
+            String actualResult = nfe.getMessage();
+            Assert.assertEquals(actualResult, expectedResult);
         }
     }
 }
