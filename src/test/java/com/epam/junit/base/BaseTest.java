@@ -1,30 +1,20 @@
 package com.epam.junit.base;
 
 import com.epam.tat.module4.Calculator;
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTest {
 
-    public double firstNumber;
-    public double secondNumber;
-    public double expectedResult;
-    public static double DELTA = 0.000001;
-
-    public BaseTest(double firstNumber, double secondNumber, double expectedResult) {
-        this.firstNumber = firstNumber;
-        this.secondNumber = secondNumber;
-        this.expectedResult = expectedResult;
-    }
+    public static final double DELTA = 0.000001;
 
     protected Calculator calculator;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         calculator = new Calculator();
     }
 
-    @After
+    @BeforeEach
     public void tearDown() {
         calculator = null;
     }
