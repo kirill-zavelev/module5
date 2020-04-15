@@ -7,9 +7,8 @@ import org.testng.annotations.Test;
 
 public class IsNegativeCalcTest extends BaseTest {
 
-    @Test(dataProvider = "IsNegativeOfLongValue", dataProviderClass = BaseDataProvider.class, groups = {"boolean"})
-    public void isNegativeOfLongValue(long a, boolean expectedResult) {
-        boolean actualResult = calculator.isNegative(a);
-        Assert.assertEquals(actualResult, expectedResult);
+    @Test(dataProvider = "isNegativeOfLongValue", dataProviderClass = BaseDataProvider.class, groups = {"booleanValues"})
+    public void isNegativeOfLongValue(long a) {
+        Assert.assertTrue(calculator.isNegative(a));
     }
 }

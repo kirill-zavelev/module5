@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class CosOfDoubleValueCalcTest extends BaseTest {
 
-    @Test(dataProvider = "CosOfDoubleValue", dataProviderClass = BaseDataProvider.class, groups = {"doubleValues"})
+    @Test(dataProvider = "cosOfDoubleValue", dataProviderClass = BaseDataProvider.class, groups = {"doubleValues"})
     public void cosOfDoubleValue(double a, double expectedResult) {
         double actualResult = calculator.cos(a);
         Assert.assertEquals(actualResult, expectedResult);
