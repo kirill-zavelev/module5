@@ -4,7 +4,7 @@ import org.testng.TestNG;
 import org.testng.xml.XmlSuite;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class TestNgRunner {
@@ -18,10 +18,10 @@ public class TestNgRunner {
 
         XmlSuite xmlSuite = new XmlSuite();
         xmlSuite.setName(SUITE_NAME);
-        List<String> files = Arrays.asList(TESTNG_XML_FILE_PATH);
+        List<String> files = Collections.singletonList(TESTNG_XML_FILE_PATH);
         xmlSuite.setSuiteFiles(files);
 
-        List<XmlSuite> suites = new ArrayList<XmlSuite>();
+        List<XmlSuite> suites = new ArrayList<>();
         suites.add(xmlSuite);
         testNG.setXmlSuites(suites);
         testNG.run();

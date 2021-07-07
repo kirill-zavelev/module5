@@ -5,12 +5,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.testng.Assert;
 
-public class SumOfLongValuesCalcTest extends BaseTest {
+public class TgOfDoubleValueCalcTest extends BaseTest{
 
     @ParameterizedTest
-    @MethodSource("com.epam.junit.base.BaseDataProvider#dataForSumOfLongValues")
-    public void sumOfLongValues(Long a, Long b, Long expectedResult) {
-        Long actualResult = calculator.sum(a, b);
+    @MethodSource("com.epam.junit.base.BaseDataProvider#dataForTgOfDoubleValue")
+    public void tgOfDoubleValue(double a, double expectedResult) {
+        double actualResult = calculator.tg(a);
         Assert.assertEquals(expectedResult, actualResult, DELTA);
     }
 }

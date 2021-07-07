@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class SubOfLongValuesCalcTest extends BaseTest {
 
-    @Test(dataProvider = "SubOfTwoLongValues", dataProviderClass = BaseDataProvider.class, groups = {"longValues"})
+    @Test(dataProvider = "subOfTwoLongValues", dataProviderClass = BaseDataProvider.class, groups = {"longValues"})
     public void subOfTwoLongValues(long a, long b, long expectedResult) {
         long actualResult = calculator.sub(a, b);
         Assert.assertEquals(actualResult, expectedResult);
